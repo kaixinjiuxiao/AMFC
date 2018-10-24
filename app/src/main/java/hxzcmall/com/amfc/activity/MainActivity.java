@@ -308,7 +308,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
-            if (view.getTitle().contains("http://psc.one/")) {
+            if (view.getTitle().contains("http")) {
                 mTitle.setText("");
             } else {
                 mTitle.setText(view.getTitle());
